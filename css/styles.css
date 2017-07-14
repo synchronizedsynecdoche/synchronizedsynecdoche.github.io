@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'tofino_personallight';
+    src: url('..\tofino-light-webfont.woff2') format('woff2'),
+         url('../fonts/tofino-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'tofino_personalmedium';
+    src: url('../fonts/tofino-medium-webfont.woff2') format('woff2'),
+         url('../fonts/tofino-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'tofino_personal_regularRg';
+    src: url('../fonts/tofino-regular-webfont.woff2') format('woff2'),
+         url('../fonts/tofino-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1, h2, h3, h4, h5, h6, p, div {
+    font-family: 'tofino_personal_regularRg';
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+.block-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.block-section-alt {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.col-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#arrow-down {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #19bafd;
+}
+
+#arrow-down a {
+    width: 100%;
+    color: #19bafd;
+    text-decoration: none;
+}

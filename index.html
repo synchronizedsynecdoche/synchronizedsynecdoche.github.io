@@ -3,44 +3,151 @@
     <head>
         <meta charset="utf-8" />
         <title>Portfolio</title>
-        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-        <link type="text/css" href="css/styles.css" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
+        <link type="text/css" rel="stylesheet" href="css/styles.css">
+        <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
     </head>
     
-    <body>
-        <div class="container">
+    <body id="page-top" data-target=".navbar-fixed-top">
         <!-- Navbar! Probably use PHP to add it as a header dynamically to each page so we don't have to copy paste so much crap -->
-            <nav class = "navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="/index.html">Negitoromaki</a>
+        <nav class = "navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex1-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">Negitoromaki</a>
+                </div>
+                <div class="collapse navbar-collapse navbar-ex1-collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="#about">About</a></li>
+                        <li><a class="page-scroll" href="#who-we-are">Who We Are</a></li>
+                        <li><a class="page-scroll" href="#projects">Projects</a></li>
+                        <li><a class="page-scroll" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="intro" class="block-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-centered">
+                        <h1><big>Negitoromaki</big></h1>
+                        <h2><small>Hi. We're the sushi chefs.</small></h2>
                     </div>
-                    <div class="collapse navbar-collapse" id="navbar">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="users/leo.html">Leo</a></li>
-                            <li><a href="users/ad.html">Ad</a></li>
-                            <li><a href="users/noah.html">Noah</a></li>
-                            <li><a href="users/patrick.html">Patrick</a></li>
-                            <li><a href="users/chris.html">Chris</a></li>
-                            <li><a href="users/ryan.html">Ryan</a></li>
-                        </ul>
+                    <section id="arrow-down" class="container">
+                        <h5 class="text-center">Enter the Kitchen</h5>
+                        <a class="page-scroll" href="#about"><span class="fa fa-arrow-down fa-2x"></span></a>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="block-section-alt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-left">
+                        <h1 class="text-center" style="padding-bottom: 25px;">About Us</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula, urna sed sollicitudin dictum, nunc enim congue nulla, vitae pretium quam erat eu augue. Cras odio magna, porttitor sit amet convallis eu, pharetra eu est. Pellentesque nec purus eget ex interdum sodales in ac ex. Sed velit justo, mattis quis est sit amet, consectetur vulputate quam. Aliquam semper purus et tellus euismod, a pellentesque ligula elementum. Quisque interdum est purus, sed ullamcorper arcu vestibulum sit amet. Pellentesque quis sapien id magna faucibus volutpat dictum quis lorem. Quisque facilisis suscipit laoreet. Ut fringilla, mi ac varius pharetra, nunc justo dignissim arcu, placerat tempus mi nunc vel nunc. Etiam ut fermentum sapien. In vestibulum egestas augue id luctus.</p>
+                        <p>Duis blandit eget eros vel posuere. Fusce nec efficitur arcu, a maximus neque. Curabitur sit amet posuere tellus. In semper ornare nulla vitae tempor. Sed dapibus, metus vel volutpat hendrerit, erat enim varius ante, quis laoreet nisl magna nec nisi. Duis at tellus eleifend, rhoncus neque vitae, imperdiet arcu. Donec nec quam ante. Pellentesque hendrerit, purus vitae elementum consequat, ligula sem condimentum ipsum, eget hendrerit dolor justo ac est. Cras purus massa, congue sit amet tortor ut, dictum dictum elit. Etiam sollicitudin tincidunt lacus, ac lobortis dui finibus et. Donec consequat tempor metus, vitae faucibus lorem hendrerit ut. Cras ornare pellentesque justo, vel auctor magna bibendum sit amet. Phasellus eu ex faucibus, convallis justo faucibus, venenatis nibh. Nunc tempor orci a est egestas scelerisque.</p>
+                        <p>Aliquam maximus lobortis enim, sit amet venenatis justo. Praesent in elit at libero lacinia egestas. Pellentesque dui nibh, aliquet id pretium sit amet, lacinia non ex. Praesent egestas metus quam, non cursus ligula ornare eu. Donec vel nisi ornare, pulvinar felis sagittis, lacinia neque. Pellentesque ac dictum lorem. Integer rhoncus quis erat a pellentesque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce suscipit tristique lacus vitae accumsan.</p>
                     </div>
                 </div>
-            </nav>
-
-             <div class="page-header">
-                <h1>B r u h this portfolio tho <small>lmao this portfolio</small></h1>
             </div>
-            <p>Lorem ipsum something something something SOMEONE PLEASE ADD TO THIS PAGE :(</p>
-        </div>
+        </section>
         
+        <section id="who-we-are" class="block-section">
+            <h1 style="padding-bottom: 50px;">A bit about us</h1>
+             <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 text-center">
+                        <a href="#"><img style="width: 100px; height: 100px;" class="img-responsive img-circle center-block" src="img/harambe-placeholder.jpg"></a>
+                        <a href="#"><h3>Ad</h3></a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <a href="#"><img style="width: 100px; height: 100px;" class="img-responsive img-circle center-block" src="img/harambe-placeholder.jpg"></a>
+                        <a href="#"><h3>Patrick</h3></a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <a href="#"><img style="width: 100px; height: 100px;" class="img-responsive img-circle center-block" src="img/harambe-placeholder.jpg"></a>
+                        <a href="#"><h3>Noah</h3></a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <a href="#"><img style="width: 100px; height: 100px;" class="img-responsive img-circle center-block" src="img/harambe-placeholder.jpg"></a>
+                        <a href="#"><h3>Ryan</h3></a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <a href="#"><img style="width: 100px; height: 100px;" class="img-responsive img-circle center-block" src="img/harambe-placeholder.jpg"></a>
+                        <a href="#"><h3>Chris</h3></a>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <a href="#"><img style="width: 100px; height: 100px;" class="img-responsive img-circle center-block" src="img/harambe-placeholder.jpg"></a>
+                        <a href="#"><h3>Leo</h3></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="block-section-alt">
+            <h1 style="padding-bottom: 50px;">Projects</h1>
+            <div class="container">
+                <div class="col-lg-4 text-center">
+                    <a href="#"><img style="max-width: 100%; max-height: 100px;" class="img-responsive img-rounded center-block" src="img/harambe-placeholder.jpg"></a>
+                    <a href="#"><h3>Project 1</h3></a>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <a href="#"><img style="max-width: 100%; max-height: 100px;" class="img-responsive img-rounded center-block" src="img/harambe-placeholder.jpg"></a>
+                    <a href="#"><h3>Project 2</h3></a>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <a href="#"><img style="max-width: 100%; max-height: 100px;" class="img-responsive img-rounded center-block" src="img/harambe-placeholder.jpg"></a>
+                    <a href="#"><h3>Project 3</h3></a>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <a href="#"><img style="max-width: 100%; max-height: 100px;" class="img-responsive img-rounded center-block" src="img/harambe-placeholder.jpg"></a>
+                    <a href="#"><h3>Project 4</h3></a>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <a href="#"><img style="max-width: 100%; max-height: 100px;" class="img-responsive img-rounded center-block" src="img/harambe-placeholder.jpg"></a>
+                    <a href="#"><h3>Project 5</h3></a>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <a href="#"><img style="max-width: 100%; max-height: 100px;" class="img-responsive img-rounded center-block" src="img/harambe-placeholder.jpg"></a>
+                    <a href="#"><h3>Project 6</h3></a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="block-section">
+            <h1 style="padding-bottom: 50px;">Contact Us</h1>
+            <div class="container">
+                <form class="text-left">
+                    <div class="form-group">
+                        <label for="inputFirstName">First name</label>
+                        <input type="text" class="form-control" id="inputFirstName" placeholder="John">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputLastName" class="text-left">Last name</label>
+                        <input type="text" class="form-control" id="inputLastName" placeholder="Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputContact" class="text-left">What would you like to say?</label>
+                        <textarea class="form-control" rows="10" id="inputContact" placeholder="Please write your message, questions, comments, or concerns in this box!"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </section>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/npm.js"></script>
+        <script src="js/scrolling-nav.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
     </body>
 </html>
