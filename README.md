@@ -1,1 +1,1 @@
-https://negitoromaki.github.io/portfolio/
+https://negitoromaki.github.io/portfolio-dev/
