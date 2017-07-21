@@ -7,9 +7,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'tofino_personalmedium';
     src: url('../fonts/tofino-medium-webfont.woff2') format('woff2'),
@@ -18,9 +15,6 @@
     font-style: normal;
 
 }
-
-
-
 
 @font-face {
     font-family: 'tofino_personal_regularRg';
