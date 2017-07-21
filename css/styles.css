@@ -1,3 +1,5 @@
+/* Fonts */
+
 @font-face {
     font-family: 'tofino_personallight';
     src: url('..\tofino-light-webfont.woff2') format('woff2'),
@@ -24,6 +26,7 @@
     font-style: normal;
 
 }
+
 
 h1, h2, h3, h4, h5, h6, p, div {
     font-family: 'tofino_personal_regularRg';
