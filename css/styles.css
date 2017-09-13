@@ -97,3 +97,30 @@ html {
     color: #19bafd;
     text-decoration: none;
 }
+
+.img-resize {
+    max-width: auto;
+    min-width: auto;
+    max-height: 100px;
+}
+
+.row {
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+.intro {
+    height: 100%;
+}
+
+#contact {
+    color: #027cae;
+}
+
+.btn {
+    background-color: #027cae;
+}
+
+.btn:hover {
+    background-color: #005c82;
+}
