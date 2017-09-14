@@ -124,3 +124,24 @@ html {
 .btn:hover {
     background-color: #005c82;
 }
+
+.form-control {
+    color: #323232;
+}
+
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    margin: 0;
+    padding: 0;
+  }
+
+  .img-2x {
+      min-height: 75%;
+      min-width: 75%;
+      height: auto;
+      width: auto;
+  }
