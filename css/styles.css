@@ -30,6 +30,8 @@
 
 h1, h2, h3, h4, h5, h6, p, div {
     font-family: 'tofino_personal_regularRg';
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 
@@ -129,7 +131,7 @@ html {
     color: #323232;
 }
 
-.background {
+.particles {
     position: absolute;
     display: block;
     top: 0;
@@ -139,9 +141,16 @@ html {
     padding: 0;
   }
 
-  .img-2x {
-      min-height: 75%;
-      min-width: 75%;
+  .img-50x {
+      min-height: 50%;
+      min-width: 50%;
       height: auto;
       width: auto;
+  }
+
+  .img-40x {
+    min-height: 40%;
+    min-width: 40%;
+    height: auto;
+    width: auto;
   }
