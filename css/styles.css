@@ -1,44 +1,24 @@
-/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
-@font-face {
-    font-family: 'tofino_personallight';
-    src: url('..\tofino-light-webfont.woff2') format('woff2'),
-         url('../fonts/tofino-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+h1, h2, h3, h4, h5, h6, p, a, div {
+    font-family: 'Noto Sans', sans-serif;
 }
 
-@font-face {
-    font-family: 'tofino_personalmedium';
-    src: url('../fonts/tofino-medium-webfont.woff2') format('woff2'),
-         url('../fonts/tofino-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+h1 {
+    color: #027cae;
+    font-size: 3em;
 }
 
-@font-face {
-    font-family: 'tofino_personal_regularRg';
-    src: url('../fonts/tofino-regular-webfont.woff2') format('woff2'),
-         url('../fonts/tofino-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+h2 {
+    color: #005c82;
+    font-size: 1.5em;
 }
 
-
-h1, h2, h3, h4, h5, h6, p, div {
-    font-family: 'tofino_personal_regularRg';
+p {
+    font-size: 1.3em;
 }
 
-
-body {
-    width: 100%;
-    height: 100%;
-}
-
-html {
+body, html{
     width: 100%;
     height: 100%;
 }
@@ -46,10 +26,20 @@ html {
 @media(min-width:767px) {
     .navbar {
         padding: 0;
-        -webkit-transition: background .5s ease-in-out, opacity .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out, opacity .5s ease-in-out;
-        transition: background .5s ease-in-out, opacity .5s ease-in-out;
 		opacity: 0;
+        background-color: #005c82;
+        border: none;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        transition: opacity .5s ease-in-out;
+    }
+
+    .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+        color: #fff;
+    }
+
+    .navbar-inverse:hover .navbar-brand:hover, .navbar-inverse .navbar-nav>li>a:hover {
+        color: #9d9d9d;
     }
 
     .top-nav-collapse {
@@ -72,7 +62,7 @@ html {
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
-    background: #eee;
+    background: #027cae;
 }
 
 .col-centered {
@@ -90,19 +80,13 @@ html {
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
-    color: #19bafd;
+    color: #027cae;
 }
 
 #arrow-down a {
     width: 100%;
-    color: #19bafd;
+    color: #027cae;
     text-decoration: none;
-}
-
-.img-resize {
-    max-width: auto;
-    min-width: auto;
-    max-height: 100px;
 }
 
 .row {
@@ -138,23 +122,31 @@ html {
     z-index: 99999;
     margin: 0;
     padding: 0;
-  }
+}
 
-  .img-50x {
-      min-height: 50%;
-      min-width: 50%;
-      height: auto;
-      width: auto;
-  }
-
-  .img-40x {
-    min-height: 40%;
-    min-width: 40%;
+.img-50x {
+    min-height: 50%;
+    min-width: 50%;
     height: auto;
     width: auto;
-  }
+}
 
-  .no-vert-margins {
-      margin-top: 0px;
-      margin-bottom: 0px;
-  }
+.img-40x {
+min-height: 40%;
+min-width: 40%;
+height: auto;
+width: auto;
+}
+
+.no-vert-margins {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.white {
+    color: #fff;
+}
+
+.padding-bottom {
+    padding-bottom: 35px;
+}
