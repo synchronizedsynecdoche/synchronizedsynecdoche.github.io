@@ -47,16 +47,14 @@ html {
 @media(min-width:767px) {
     .navbar {
         padding: 0;
-		opacity: 0;
-		background-color: #19bafd;
-		border-bottom-color: #19bafd;
-		box-shadow: 10px 2px 8px #179fd8;
-        -webkit-transition: background .5s ease-in-out,opacity .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,opacity 0.5s ease-in-out;
-        transition: background .5s ease-in-out,opacity 0.5s ease-in-out;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out,opacity .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out,opacity 0.5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out,opacity 0.5s ease-in-out;
+        opacity: 0;
     }
 
     .top-nav-collapse {
+        padding: 0;
         opacity: 1;
     }
 }
