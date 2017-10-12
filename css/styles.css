@@ -36,10 +36,15 @@ body, html{
 
     .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
         color: #fff;
+        opacity: 0.8;
+        -webkit-transition: opacity .15s ease-in-out;
+        -moz-transition: opacity .15s ease-in-out;
+        transition: opacity .15s ease-in-out;
     }
 
-    .navbar-inverse:hover .navbar-brand:hover, .navbar-inverse .navbar-nav>li>a:hover {
-        color: #9d9d9d;
+    .navbar-inverse:hover .navbar-brand:hover, .navbar-inverse .navbar-nav>li>a:hover{
+        color: #fff;
+        opacity: 1;
     }
 
     .top-nav-collapse {
