@@ -46,14 +46,14 @@ ul, li {
 }
 
 ul {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 li {
     display: inline-block;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 body, html{
@@ -65,7 +65,7 @@ body, html{
 .navbar {
     padding: 0;
     opacity: 0;
-    background-color: #005c82;
+    background-color: #027cae;
     border: none;
     -webkit-transition: opacity .5s ease-in-out;
     -moz-transition: opacity .5s ease-in-out;
@@ -76,8 +76,8 @@ body, html{
 .navbar-inverse .navbar-toggle {
     border-color: #fff;
     opacity: 0.8;
-    color: #005c82;
-    background-color: #005c82;
+    color: #027cae;
+    background-color: #027cae;
 }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
@@ -85,7 +85,7 @@ body, html{
 }
 
 .navbar-inverse .navbar-toggle:focus .icon-bar, .navbar-inverse .navbar-toggle:hover .icon-bar {
-    background-color: #005c82;
+    background-color: #027cae;
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
@@ -124,6 +124,7 @@ body, html{
     padding-right: 30px;
     text-align: center;
     background: #027cae;
+    background: linear-gradient(135deg, #01a5ae, #013aae);
 }
 
 .center-sushi {
@@ -155,7 +156,7 @@ body, html{
 }
 
 .intro {
-    height: 100%;
+    height: 97%;
 }
 
 .contact {
