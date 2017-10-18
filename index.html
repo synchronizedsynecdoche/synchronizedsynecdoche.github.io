@@ -35,7 +35,7 @@
         </nav>
 
         <!-- Intro text -->
-        <section id="intro" class="intro block-section">
+        <section id="intro" class="height-100 block-section">
                     <div class="center-sushi">
                         <h1 class="white">negitoromaki</h1>
                         <h2 class="white">Hi. We're the sushi chefs.</h2>
@@ -66,31 +66,31 @@
                 <ul>
                     <li class="text-center">
                         <a href="users/ad.html"><img class="img-10x" src="img/mackerel.png"></a>
-                        <a href="users/ad.html"><h3 class="white">Ad</h3></a>
+                        <a href="users/ad.html"><h3 class="white padding-bottom">Ad</h3></a>
                     </li>
                     <li class="text-center">
                             <a href="users/noah.html"><img class="img-10x" src="img/mackerel.png"></a>
-                            <a href="users/noah.html"><h3 class="white">Noah</h3></a>
+                            <a href="users/noah.html"><h3 class="white padding-bottom">Noah</h3></a>
                     </li>
                     <li class="text-center">
                             <a href="users/leo.html"><img class="img-10x" src="img/mackerel.png"></a>
-                            <a href="users/leo.html"><h3 class="white">Leo</h3></a>
+                            <a href="users/leo.html"><h3 class="white padding-bottom">Leo</h3></a>
                     </li>
                     <li class="text-center">
                         <a href="users/kalli.html"><img class="img-10x" src="img/mackerel.png"></a>
-                        <a href="users/kalli.html"><h3 class="white">Kalli</h3></a>
+                        <a href="users/kalli.html"><h3 class="white padding-bottom">Kalli</h3></a>
                     </li>
                     <li class="text-center">
                             <a href="users/chris.html"><img class="img-10x" src="img/mackerel.png"></a>
-                            <a href="users/chris.html"><h3 class="white">Chris</h3></a>
+                            <a href="users/chris.html"><h3 class="white padding-bottom">Chris</h3></a>
                     </li>
                     <li class="text-center">
                         <a href="users/ryan.html"><img class="img-10x" src="img/mackerel.png"></a>
-                        <a href="users/ryan.html"><h3 class="white">Ryan</h3></a>
+                        <a href="users/ryan.html"><h3 class="white padding-bottom">Ryan</h3></a>
                     </li>
                     <li class="text-center">
                             <a href="users/patrick.html"><img class="img-10x" src="img/mackerel.png"></a>
-                            <a href="users/patrick.html"><h3 class="white">Patrick</h3></a>
+                            <a href="users/patrick.html"><h3 class="white padding-bottom">Patrick</h3></a>
                     </li>
                 </ul>
         </section>
@@ -107,21 +107,21 @@
         </section>
         
         <!-- Contact Form -->
-        <section id="contact" class="contact block-section">
-            <h1 class="white padding-bottom">Contact Us</h1>
-            <div class="container">
-                <form class="white text-left">
-                    <div class="form-group">
+        <section id="contact" class="contact outer block-section">
+            <div class="container middle">
+                <form method="post" action="email.php" class="inner white text-left">
+                    <h1 class="white text-center padding-bottom">Contact Us</h1>
+                    <div class="padding-top form-group">
                         <label for="inputFirstName">First name</label>
-                        <input type="text" class="form-control" id="inputFirstName" placeholder="Purdue">
+                        <input type="text" class="form-control" name="inputFirstName" placeholder="Purdue">
                     </div>
                     <div class="white form-group">
                         <label for="inputLastName" class="text-left">Last name</label>
-                        <input type="text" class="form-control" id="inputLastName" placeholder="Pete">
+                        <input type="text" class="form-control" name="inputLastName" placeholder="Pete">
                     </div>
                     <div class="white form-group">
                         <label for="inputContact" class="text-left">What would you like to say?</label>
-                        <textarea class="form-control" rows="10" id="inputContact" placeholder="Please write your message, questions, comments, or concerns in this box!"></textarea>
+                        <textarea class="form-control" rows="10" name="inputContact" placeholder="Please write your message, questions, comments, or concerns in this box!"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>

@@ -94,43 +94,47 @@ body, html{
 
 .block-section {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 85px;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
     background: #027cae;
     background: linear-gradient(135deg, #01a5ae, #013aae);
+    background-attachment: fixed;
 }
 
 .block-section-alt {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 85px;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
     background: #fff;
     background: radial-gradient(circle at center, #fff, #dedede);
+    background-attachment: fixed;
 }
 
 /* Intro Elements */
 
-.intro {
-    height: 100%;
-}
-
 .center-sushi {
     position: absolute;
-    top: 43%;
+    top: 47%;
     left: 50%;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    height: auto;
 }
 
 .center-sushi h1 {
-    font-size: 7em;
+    font-size: 11vw;
     padding-bottom: 20px;
+}
+
+.center-sushi h2 {
+    font-size: 3.5vw;
 }
 
 .arrow-down {
@@ -203,6 +207,25 @@ li {
     min-width: 10%;
     height: auto;
     width: auto;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.outer {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin: 50px;
 }
 
 .white {
