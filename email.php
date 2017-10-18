@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["inputLastName"])) {
     $lnameErr = "Last name is required";
   } else {
-    $lname = test_input($_POST["inputFirstName"]);
+    $lname = test_input($_POST["inputLastName"]);
     // check if name only contains letters and whitespace
     if (!preg_match("/^[a-zA-Z ]*$/",$lname)) {
       $lnameErr = "Only letters and white space allowed"; 
@@ -42,6 +42,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     mail("cs.sculley@gmail.com","NEGITOROMAKI",$msg);
 
-    echo "Mail sent, thanks " . $first_name . "!";
+    echo "Mail sent, thanks " . $fname . "!";
 }
 ?>
