@@ -1,12 +1,15 @@
+/* Font Elements */
+
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, a:link, a:visited {
     font-family: 'Noto Sans', sans-serif;
     text-decoration: none;
     margin-top: 0px;
     margin-bottom: 0px;
     -webkit-transition: opacity .15s ease-in-out;
     -moz-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
     transition: opacity .15s ease-in-out;
     color: #027cae;
 }
@@ -17,25 +20,155 @@ h1 {
 
 h2 {
     color: #005c82;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 p {
     font-size: 1.3em;
 }
 
-
-a:link, a:visited {
-    text-decoration: none;
-}
-
-a.white h3, a h3{
+a.white h3, a:hover h3, a:focus h3  { /* a.white and a have inverse states */
     opacity: 0.8;
 }
 
-a:hover h3, a:focus h3 {
+a.white:hover h3, a.white:focus h3, a.white h3 {
     opacity: 1;
 }
+
+/* Body Elements */
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    background-color: #027cae;
+    border: none;
+    z-index: 999;
+    top: -100%;
+    -webkit-transition: top 1s ease;
+    -moz-transition: top 1s ease;
+    -o-transition: top 1s ease;
+    transition: top 1s ease;
+}
+
+.navbar.scrolled { /* Navbar slides in When scrolled */
+    top: 0;
+}
+
+.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:focus { /* Collapsed Navbar Colors */
+    border-color: #fff;
+    opacity: 0.8;
+    background-color: #027cae;
+}
+
+.navbar-inverse .navbar-toggle:hover { /* Collapsed Navbar Button */
+    background-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle:hover .icon-bar { /* Collapsed Navbar Button Lines */
+    background-color: #027cae;
+}
+
+.navbar-inverse .navbar-collapse { /* Collapsed Navbar Colors */
+    border-color: #fff;
+    border-width: 2px;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a { /* Navbar Link Fading */
+    color: #fff;
+    opacity: 0.8;
+    -webkit-transition: opacity .15s ease-in-out;
+    -moz-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+}
+
+.navbar-inverse:hover .navbar-brand:hover, .navbar-inverse .navbar-nav>li>a:hover{
+    opacity: 1;
+}
+
+/* Block Section Styles */
+
+.block-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    background: #027cae;
+    background: linear-gradient(135deg, #01a5ae, #013aae);
+}
+
+.block-section-alt {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    background: #fff;
+    background: radial-gradient(circle at center, #fff, #dedede);
+}
+
+/* Intro Elements */
+
+.intro {
+    height: 100%;
+}
+
+.center-sushi {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.center-sushi h1 {
+    font-size: 7em;
+    padding-bottom: 20px;
+}
+
+.arrow-down {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #027cae;
+}
+
+.arrow-down a {
+    width: 100%;
+    color: #027cae;
+    text-decoration: none;
+}
+
+/* Contact Form Elements */
+
+.contact {
+    color: #027cae;
+}
+
+.btn {
+    border-color: #fff;
+    background-color: #027cae;
+}
+
+.btn:hover, .btn:active {
+    color: #027cae !important;
+    border-color: #027cae !important;
+    background-color: #fff !important;
+}
+
+.form-control {
+    color: #323232;
+}
+
+/* List Elements */
 
 ul, li {
     list-style-type: none;
@@ -56,124 +189,7 @@ li {
     margin-right: 10px;
 }
 
-body, html{
-    width: 100%;
-    height: 100%;
-}
-
-
-.navbar {
-    padding: 0;
-    opacity: 0;
-    background-color: #027cae;
-    border: none;
-    -webkit-transition: opacity .5s ease-in-out;
-    -moz-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
-    z-index: 999;
-}
-
-.navbar-inverse .navbar-toggle {
-    border-color: #fff;
-    opacity: 0.8;
-    color: #027cae;
-    background-color: #027cae;
-}
-
-.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-    background-color: #fff;
-}
-
-.navbar-inverse .navbar-toggle:focus .icon-bar, .navbar-inverse .navbar-toggle:hover .icon-bar {
-    background-color: #027cae;
-}
-
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #fff;
-}
-
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
-    color: #fff;
-    opacity: 0.8;
-    -webkit-transition: opacity .15s ease-in-out;
-    -moz-transition: opacity .15s ease-in-out;
-    transition: opacity .15s ease-in-out;
-}
-
-.navbar-inverse:hover .navbar-brand:hover, .navbar-inverse .navbar-nav>li>a:hover{
-    opacity: 1;
-}
-
-.top-nav-collapse {
-    opacity: 1;
-}
-
-.block-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: center;
-    background: #fff;
-}
-
-.block-section-alt {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: center;
-    background: #027cae;
-    background: linear-gradient(135deg, #01a5ae, #013aae);
-}
-
-.center-sushi {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-}
-
-.arrow-down {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #027cae;
-}
-
-.arrow-down a {
-    width: 100%;
-    color: #027cae;
-    text-decoration: none;
-}
-
-.row {
-    text-align: center;
-}
-
-.intro {
-    height: 97%;
-}
-
-.contact {
-    color: #027cae;
-}
-
-.btn {
-    background-color: #027cae;
-}
-
-.btn:hover {
-    background-color: #005c82;
-}
-
-.form-control {
-    color: #323232;
-}
+/* Utilties */
 
 .img-50x {
     min-height: 50%;
