@@ -3,6 +3,13 @@
 $fnameErr = $lnameErr = $msgErr = "";
 $fname = $lname = $msg = "";
 
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if (empty($_POST["inputFirstName"])) {
@@ -32,13 +39,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 
     $msg = $fname . " " . $lname . "\n\n" . $msg;
-
-    function test_input($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-    }
 
     mail("cs.sculley@gmail.com","NEGITOROMAKI",$msg);
 
