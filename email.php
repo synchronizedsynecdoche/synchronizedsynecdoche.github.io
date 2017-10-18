@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $msg = test_input($_POST["inputContact"]);
   }
 
-    $msg = $fname . " " . $lname . "\n\n" . $msg;
+    $msg = "Mail from: " . $fname . " " . $lname . ".\n\n" . $msg;
 
     mail("cs.sculley@gmail.com","NEGITOROMAKI",$msg);
 
