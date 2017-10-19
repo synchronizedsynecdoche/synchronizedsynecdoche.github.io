@@ -29,6 +29,10 @@ p {
 
 a.white h3, a:hover h3, a:focus h3  { /* a.white and a have inverse states */
     opacity: 0.8;
+    -webkit-transition: opacity .15s ease-in-out;
+    -moz-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
 }
 
 a.white:hover h3, a.white:focus h3, a.white h3 {
@@ -120,6 +124,7 @@ body, html{
     position: absolute;
     top: 47%;
     left: 50%;
+    -o-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -139,17 +144,29 @@ body, html{
 
 .arrow-down {
     position: absolute;
-    bottom: 3%;
+    bottom: 4%;
     left: 50%;
     transform: translateX(-50%);
-    color: #027cae;
+    width: auto;
+}
+
+.arrow-down a span {
+    padding-top: 15px;
+    opacity: 1;
 }
 
 .arrow-down a {
-    width: 100%;
-    color: #027cae;
-    text-decoration: none;
+    opacity: 0.8;
+    -webkit-transition: opacity .15s ease-in-out;
+    -moz-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
 }
+
+.arrow-down a:hover {
+    opacity: 1;
+}
+
 
 /* Contact Form Elements */
 
