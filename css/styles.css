@@ -150,12 +150,7 @@ body, html{
     width: auto;
 }
 
-.arrow-down a span {
-    padding-top: 15px;
-    opacity: 1;
-}
-
-.arrow-down a {
+.arrow-down a h3 {
     opacity: 0.8;
     -webkit-transition: opacity .15s ease-in-out;
     -moz-transition: opacity .15s ease-in-out;
@@ -163,8 +158,18 @@ body, html{
     transition: opacity .15s ease-in-out;
 }
 
-.arrow-down a:hover {
+.arrow-down a:hover h3 {
     opacity: 1;
+}
+
+.arrow { /* Rotate arrow down */
+    font-size: 2.5em;
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    padding-left: 20px;
 }
 
 /* Contact Form Elements */
