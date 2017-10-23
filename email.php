@@ -13,46 +13,49 @@ $fnameErr = $lnameErr = $emailErr = "";
 $fname = $lname = $msg = $email = "";
 
 
-  if (empty($_POST["inputFirstName"])) {
-    $fnameErr = "* First name is required";
-  } else {
+    if (empty($_POST["inputFirstName"])) {
+        $fnameErr = "* First name is required";
+    } else {
     $fname = test_input($_POST["inputFirstName"]);
     // check if name only contains letters and whitespace
     if (!preg_match("/^[a-zA-Z ]*$/",$fname)) {
-      $fnameErr = "* Only letters and white space allowed"; 
+        $fnameErr = "* Only letters and white space allowed"; 
+		}
     }
-  }
 
-  if (empty($_POST["inputLastName"])) {
-    $lnameErr = "* Last name is required";
-  } else {
-    $lname = test_input($_POST["inputLastName"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z ]*$/",$lname)) {
-      $lnameErr = "* Only letters and white space allowed"; 
-    }
-  }
+	if (empty($_POST["inputLastName"])) {
+		$lnameErr = "* Last name is required";
+	} else {
+		$lname = test_input($_POST["inputLastName"]);
+		// check if name only contains letters and whitespace
+		if (!preg_match("/^[a-zA-Z ]*$/",$lname)) {
+			$lnameErr = "* Only letters and white space allowed"; 
+		}
+	}
 
-  if (empty($_POST["inputEmail"])) {
-    $emailErr = "* Email is required";
-  } else {
-    $email = test_input($_POST["inputEmail"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "* Invalid email format"; 
-    }
-  }
+    if (empty($_POST["inputEmail"])) {
+		$emailErr = "* Email is required";
+    } else {
+		$email = test_input($_POST["inputEmail"]);
+		// check if e-mail address is well-formed
+		if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+			$emailErr = "* Invalid email format"; 
+		}
+	}
 
-  if (empty($_POST["inputContact"])) {
-    $msg = "";
-  } else {
-    $msg = test_input($_POST["inputContact"]);
-  }
+	if (empty($_POST["inputContact"])) {
+		$msg = "";
+	} else {
+		$msg = test_input($_POST["inputContact"]);
+	}
   
 	if (empty($fnameErr) and empty($lnameErr) and empty($emailErr)) {
 		$msg = "Mail from: " . $fname . " " . $lname . " at " . $email . ".\n\n" . $msg;
 		mail("cs.sculley@gmail.com","NEGITOROMAKI",$msg);
 		echo "Mail sent, thanks " . $fname . "!";
+	} else {
+		echo "Mail not sent, please check over these error messages!";
+		echo "\n" . $fnameErr . "\n" . $lnameErr . "\n" . $emailErr;
 	}
 }
 ?>
