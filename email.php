@@ -1,8 +1,4 @@
 <?php
-// define variables and set to empty values
-$fnameErr = $lnameErr = $emailErr = "";
-$fname = $lname = $msg = $email = "";
-
 function test_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
@@ -11,6 +7,11 @@ function test_input($data) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	
+// define variables and set to empty values
+$fnameErr = $lnameErr = $emailErr = "";
+$fname = $lname = $msg = $email = "";
+
 
   if (empty($_POST["inputFirstName"])) {
     $fnameErr = "* First name is required";
@@ -48,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $msg = test_input($_POST["inputContact"]);
   }
   
-	if (!empty($fnameErr) or !empty($lnameErr) or !empty($emailErr)) {
+	if (empty($fnameErr) and empty($lnameErr) and empty($emailErr)) {
 		$msg = "Mail from: " . $fname . " " . $lname . " at " . $email . ".\n\n" . $msg;
 		mail("cs.sculley@gmail.com","NEGITOROMAKI",$msg);
 		echo "Mail sent, thanks " . $fname . "!";
