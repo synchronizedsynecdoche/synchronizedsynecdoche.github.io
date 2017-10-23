@@ -114,18 +114,22 @@
                     <div class="padding-top form-group">
                         <label for="inputFirstName">First name</label>
                         <input type="text" class="form-control" name="inputFirstName" placeholder="Purdue">
+						<span class="error">* <?php echo $fnameErr;?></span>
                     </div>
                     <div class="white form-group">
                         <label for="inputLastName" class="text-left">Last name</label>
                         <input type="text" class="form-control" name="inputLastName" placeholder="Pete">
+						<span class="error">* <?php echo $lnameErr;?></span>
                     </div>
                     <div class="white form-group">
                         <label for="email" class="text-left">Email</label>
                         <input type="text" class="form-control" name="inputEmail" placeholder="pete@purdue.edu">
+						<span class="error">* <?php echo $emailErr;?></span>
                     </div>
                     <div class="white form-group">
                         <label for="inputContact" class="text-left">What would you like to say?</label>
                         <textarea class="form-control" rows="10" name="inputContact" placeholder="Please write your message, questions, comments, or concerns in this box!"></textarea>
+						<span class="error">* <?php echo $msgErr;?></span>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>

@@ -47,11 +47,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     $msg = test_input($_POST["inputContact"]);
   }
-
-    $msg = "Mail from: " . $fname . " " . $lname . " at " . $email . ".\n\n" . $msg;
-
-    mail("cs.sculley@gmail.com","NEGITOROMAKI",$msg);
-
-    echo "Mail sent, thanks " . $fname . "!";
+  
+	if (!empty($fname) or !empty($lname) or !empty($email)) {
+		$msg = "Mail from: " . $fname . " " . $lname . " at " . $email . ".\n\n" . $msg;
+		mail("cs.sculley@gmail.com","NEGITOROMAKI",$msg);
+		echo "Mail sent, thanks " . $fname . "!";
+	}
 }
 ?>
