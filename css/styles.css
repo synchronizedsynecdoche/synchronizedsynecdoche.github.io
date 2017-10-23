@@ -11,7 +11,6 @@ h1, h2, h3, h4, h5, h6, p, a, a:link, a:visited {
     -moz-transition: opacity .15s ease-in-out;
     -o-transition: opacity .15s ease-in-out;
     transition: opacity .15s ease-in-out;
-    color: #027cae;
 }
 
 h1 {
@@ -253,10 +252,22 @@ li {
     color: #fff;
 }
 
+.black {
+	color: #333;
+}
+
+.blue {
+	color: #027cae;
+}
+
 .padding-top {
     padding-top: 10px;
 }
 
 .padding-bottom {
     padding-bottom: 35px;
+}
+
+.nav-bump {
+	padding-top: 75px;
 }
