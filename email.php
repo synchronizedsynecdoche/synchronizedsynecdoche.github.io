@@ -1,7 +1,7 @@
 <?php
 // define variables and set to empty values
-$fnameErr = $lnameErr = $msgErr = "";
-$fname = $lname = $msg = "";
+$fnameErr = $lnameErr = $msgErr = $emailErr = "";
+$fname = $lname = $msg = $email = "";
 
 function test_input($data) {
     $data = trim($data);
@@ -32,13 +32,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
 
+  if (empty($_POST["inputEmail"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["inputEmail"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format"; 
+    }
+  }
+
   if (empty($_POST["inputContact"])) {
     $msg = "";
   } else {
     $msg = test_input($_POST["inputContact"]);
   }
 
-    $msg = "Mail from: " . $fname . " " . $lname . ".\n\n" . $msg;
+    $msg = "Mail from: " . $fname . " " . $lname . " at " . $email . ".\n\n" . $msg;
 
     mail("cs.sculley@gmail.com","NEGITOROMAKI",$msg);
 
