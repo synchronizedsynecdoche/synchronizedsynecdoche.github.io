@@ -5,7 +5,7 @@
         <title>Portfolio</title>
         <meta name="description" content="Negitoromaki's Portfolio">
         <meta name="author" content="Negitoromaki">
-        <meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0" />
+        <meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="css/styles.css">
     </head>
@@ -35,33 +35,33 @@
         </nav>
 
         <!-- Intro text -->
-        <section id="intro" class="height-100 block-section">
-                    <div class="center-sushi">
-                        <h1 class="white">negitoromaki</h1>
-                        <h2 class="white">Hi. We're the sushi chefs.</h2>
-                    </div>
-                    <div class="arrow-down container">
-                        <h5 class="white text-center">Enter the Kitchen</h5>
-                        <a class="white page-scroll" href="#about">
-                            <h3 class="arrow white">➜</h3>
-                        </a>
-                    </div>
+        <section id="intro" class="height-100 block-section block-section-padding">
+			<div class="center-sushi">
+				<h1 class="white">negitoromaki</h1>
+				<h2 class="white">Hi. We're the sushi chefs.</h2>
+			</div>
+			<div class="arrow-down container">
+				<h5 class="white text-center">Enter the Kitchen</h5>
+				<a class="white page-scroll" href="#about">
+					<h3 class="arrow white">➜</h3>
+				</a>
+			</div>
         </section>
 
         <!-- About Section -->
         <section id="about" class="block-section-alt">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-8 col-xs-offset-2 text-center blue">
-                        <h1 class="padding-bottom">What we do</h1>
-                        <p>We're a group of college students who love working on projects with each other. With different majors, interests, and specialities, we might be diverse, but we're focused on one thing and one thing only: making cool things that people can use. Have a look around and see what we've done!</p>
-                    </div>
-                </div>
-            </div>
+			<div class="block-section-padding container">
+				<div class="row">
+					<div class="col-xs-8 col-xs-offset-2 text-center blue">
+						<h1 class="padding-bottom">What we do</h1>
+						<p>We're a group of college students who love working on projects with each other. With different majors, interests, and specialities, we might be diverse, but we're focused on one thing and one thing only: making cool things that people can use. Have a look around and see what we've done!</p>
+					</div>
+				</div>
+			</div>
         </section>
 
         <!--Who We Are Section -->
-        <section id="who-we-are" class="block-section">
+        <section id="who-we-are" class="block-section block-section-padding">
             <h1 class="padding-bottom white">About Us</h1>
                 <ul>
                     <li class="text-center">
@@ -97,17 +97,19 @@
         
         <!-- Projects Section -->
         <section id="projects" class="block-section-alt">
-            <h1 class="padding-bottom blue">Projects</h1>
-                <ul class="row">
-                    <li class="text-center">
-                        <a target="_blank" href="https://devpost.com/software/ad-block-ar"><img class="img-10x" src="img/Negitoromaki1.png"></a>
-                        <a target="_blank" href="https://devpost.com/software/ad-block-ar"><h3>Ad BlockAR</h3></a>
-                    </li>
-                </ul>
+			<div class="block-section-padding">
+				<h1 class="padding-bottom blue">Projects</h1>
+				<ul class="row">
+					<li class="text-center">
+						<a target="_blank" href="https://devpost.com/software/ad-block-ar"><img class="img-10x" src="img/Negitoromaki1.png"></a>
+						<a target="_blank" href="https://devpost.com/software/ad-block-ar"><h3>Ad BlockAR</h3></a>
+					</li>
+				</ul>
+			</div>
         </section>
         
         <!-- Contact Form -->
-        <section id="contact" class="contact outer block-section">
+        <section id="contact" class="contact outer block-section block-section-padding">
             <div class="container middle">
                 <form method="post" action="email.php" class="inner white text-left">
                     <h1 class="white text-center padding-bottom">Contact Us</h1>
@@ -131,6 +133,8 @@
                 </form>
             </div>
         </section>
+		
+		<canvas class="particles"></canvas>
 
         <!-- Scripts -->
         
@@ -138,6 +142,33 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
         <script src="js/scrolling-nav.js"></script>
-        
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.1.0/particles.min.js"></script>
+		<script>
+		  document.onload = function() {
+			Particles.init({
+			  selector: '.particles',
+			  color: '#027cae',
+			  speed: 0.3,
+			  maxParticles: 130,
+			  sizeVariations: 1.3,
+
+			  connectParticles: true,
+			  responsive: [
+				{
+				  breakpoint: 768,
+				  options: {
+					maxParticles: 80
+				  }
+				}, {
+				  breakpoint: 375,
+				  options: {
+					maxParticles: 50
+				  }
+				}
+			  ]
+			});
+		  };
+		</script>
+
     </body>
 </html>
