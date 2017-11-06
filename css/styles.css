@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5, h6, p, a, a:link, a:visited {
     -moz-transition: opacity .15s ease-in-out;
     -o-transition: opacity .15s ease-in-out;
     transition: opacity .15s ease-in-out;
+	position: relative;
 }
 
 h1 {
@@ -36,6 +37,21 @@ a.white h3, a:hover h3, a:focus h3  { /* a.white and a have inverse states */
 
 a.white:hover h3, a.white:focus h3, a.white h3 {
     opacity: 1;
+}
+
+.experimental {
+	position: absolute;
+	white-space: nowrap;
+	overflow: visible;
+	top: 250%;
+	left: 80%;
+	display: block;
+	font-size: 1em;
+	color: #ff3232;
+	-webkit-transform: rotate(13deg);
+	-moz-transform: rotate(13deg);
+	-ms-transform: rotate(13deg);
+	transform: rotate(13deg);
 }
 
 /* Body Elements */
