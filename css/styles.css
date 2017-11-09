@@ -1,3 +1,9 @@
+/* -- Color Palette --- */
+/* Main:        #1a4892 */
+/* Secondary:   #333333 */
+/* Accent:      #ff3232 */
+/* -------------------- */
+
 /* Font Elements */
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
@@ -43,7 +49,7 @@ a.white:hover h3, a.white:focus h3, a.white h3 {
 	position: absolute;
 	white-space: nowrap;
 	overflow: visible;
-	top: 250%;
+	top: 300%;
 	left: 80%;
 	display: block;
 	font-size: 1em;
@@ -73,7 +79,7 @@ body, html{
 
 .navbar {
     position: fixed;
-    background-color: #027cae;
+    background-color: #1a4892;
     border: none;
     z-index: 999;
     top: -100%;
@@ -90,7 +96,7 @@ body, html{
 .navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:focus { /* Collapsed Navbar Colors */
     border-color: #fff;
     opacity: 0.8;
-    background-color: #027cae;
+    background-color: #1a4892;
 }
 
 .navbar-inverse .navbar-toggle:hover { /* Collapsed Navbar Button */
@@ -98,7 +104,7 @@ body, html{
 }
 
 .navbar-inverse .navbar-toggle:hover .icon-bar { /* Collapsed Navbar Button Lines */
-    background-color: #027cae;
+    background-color: #1a4892;
 }
 
 .navbar-inverse .navbar-collapse { /* Collapsed Navbar Colors */
@@ -123,8 +129,8 @@ body, html{
 
 .block-section {
 	text-align: center;
-    background: #027cae;
-    background: linear-gradient(135deg, #01a5ae, #013aae);
+    background: #1a4892;
+    background: linear-gradient(135deg, #0a99c9, #451fb7);
     background-attachment: fixed;
 }
 
@@ -199,22 +205,22 @@ body, html{
 /* Contact Form Elements */
 
 .contact {
-    color: #027cae;
+    color: #1a4892;
 }
 
 .btn {
     border-color: #fff;
-    background-color: #027cae;
+    background-color: #1a4892;
 }
 
 .btn:hover, .btn:active {
-    color: #027cae !important;
-    border-color: #027cae !important;
+    color: #1a4892 !important;
+    border-color: #1a4892 !important;
     background-color: #fff !important;
 }
 
 .form-control {
-    color: #323232;
+    color: #333;
 }
 
 /* List Elements */
@@ -270,7 +276,7 @@ li {
 }
 
 .inner {
-    margin: 50px;
+    margin: 100px;
 }
 
 .white {
@@ -282,7 +288,7 @@ li {
 }
 
 .blue {
-	color: #027cae;
+	color: #1a4892;
 }
 
 .padding-top {
