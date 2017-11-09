@@ -136,8 +136,10 @@
                 </form>
             </div>
         </section>
-		
-		<canvas class="particles"></canvas>
+
+		<div class="particles-wrapper">
+            <canvas class="particles"></canvas>
+        </div>
 
         <!-- Scripts -->
         
@@ -147,13 +149,13 @@
         <script src="js/scrolling-nav.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.1.0/particles.min.js"></script>
 		<script>
-		  document.onload = function() {
+		  window.onload = function() {
 			Particles.init({
 			  selector: '.particles',
-			  color: '#027cae',
+			  color: '#1a4892',
 			  speed: 0.3,
-			  maxParticles: 130,
-			  sizeVariations: 1.3,
+			  maxParticles: 100,
+			  sizeVariations: 2,
 
 			  connectParticles: true,
 			  responsive: [
@@ -166,6 +168,11 @@
 				  breakpoint: 375,
 				  options: {
 					maxParticles: 50
+				  }
+				}, {
+				  breakpoint: 0,
+				  options: {
+					maxParticles: 20
 				  }
 				}
 			  ]

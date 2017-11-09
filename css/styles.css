@@ -68,13 +68,24 @@ body, html{
     height: 100%;
 }
 
-.particles {
-	height: 100vh;
-	width: 100vw;
+.particles-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: block;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: -9999;
+}
+
+.particles {
+	height: 100vh;
+    width: 100vw;
+    display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+    z-index: -9999;
 }
 
 .navbar {
@@ -137,7 +148,7 @@ body, html{
 .block-section-alt {
 	text-align: center;
 	background: transparent;
-	background: radial-gradient(circle at center, transparent 0%, #000 500%);
+    background: radial-gradient(circle at center, #ffffffbd 0%, black 500%);
 }
 
 .block-section-padding {
