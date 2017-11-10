@@ -147,8 +147,8 @@ body, html{
 
 .block-section-alt {
 	text-align: center;
-	background: transparent;
-    background: radial-gradient(circle at center, #ffffffbd 0%, black 500%);
+    background: transparent;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.5) 0%, rgb(0,0,0) 500%);
 }
 
 .block-section-padding {
