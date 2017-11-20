@@ -142,7 +142,7 @@ body, html{
 	text-align: center;
     background: #1a4892;
     background: linear-gradient(135deg, #0a99c9, #451fb7);
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 	overflow: hidden;
 }
 
