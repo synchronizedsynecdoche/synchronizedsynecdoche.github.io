@@ -143,6 +143,7 @@ body, html{
     background: #1a4892;
     background: linear-gradient(135deg, #0a99c9, #451fb7);
     background-attachment: fixed;
+	overflow: hidden;
 }
 
 .block-section-alt {
@@ -181,6 +182,15 @@ body, html{
 
 .center-sushi h2 {
     font-size: 3.5vw;
+}
+
+.center-sushi-background {
+	position: relative;
+	display: block;
+	min-width: 100vw;
+	min-height: 100vh;
+	height: auto;
+	opacity: 0.15;
 }
 
 .arrow-down {
