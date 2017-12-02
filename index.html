@@ -3,17 +3,19 @@
     <head>
         <meta charset="utf-8" />
         <title>Portfolio</title>
-        <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
-        <link type="text/css" rel="stylesheet" href="css/styles.css">
-        <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+        <meta name="description" content="Negitoromaki's Portfolio">
+        <meta name="author" content="Negitoromaki">
+        <meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     
     <body id="page-top" data-target=".navbar-fixed-top">
         <!-- Navbar! Probably use PHP to add it as a header dynamically to each page so we don't have to copy paste so much crap -->
-        <nav class = "navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex1-collapse" aria-expanded="false">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -21,10 +23,10 @@
                     </button>
                     <a class="navbar-brand page-scroll" href="#page-top">Negitoromaki</a>
                 </div>
-                <div class="collapse navbar-collapse navbar-ex1-collapse" id="navbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a class="page-scroll" href="#about">About</a></li>
-                        <li><a class="page-scroll" href="#who-we-are">Who We Are</a></li>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right text-center">
+                        <li><a class="page-scroll" href="#about">What we do</a></li>
+                        <li><a class="page-scroll" href="#who-we-are">About Us</a></li>
                         <li><a class="page-scroll" href="#projects">Projects</a></li>
                         <li><a class="page-scroll" href="#contact">Contact</a></li>
                     </ul>
@@ -32,130 +34,130 @@
             </div>
         </nav>
 
-        <section id="intro" class="intro block-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-centered">
-                        <img src="img/Negitoromaki1.png" class="img-50x">
-                        <h1><big>Negitoromaki</big></h1>
-                        <h2><small>Hi. We're the sushi chefs.</small></h2>
-                    </div>
-                    <section id="arrow-down" class="container">
-                        <h5 class="text-center">Enter the Kitchen</h5>
-                        <a class="page-scroll" href="#about"><span class="fa fa-arrow-down fa-2x"></span></a>
-                    </section>
-                </div>
-            </div>
+        <!-- Intro text -->
+        <section id="intro" class="height-100 block-section">
+			<img src="img/sushi.png" class="center-sushi-background">
+			<div class="block-section-padding">
+				<div class="center-sushi">
+					<h1 class="white">negitoromaki</h1>
+					<h2 class="white">Hi. We're the sushi chefs.</h2>
+				</div>
+				<div class="arrow-down container">
+					<h5 class="white text-center">Enter the Kitchen</h5>
+					<a class="white page-scroll" href="#about">
+						<h3 class="arrow white">➜</h3>
+					</a>
+				</div>
+			</div>
         </section>
 
         <!-- About Section -->
         <section id="about" class="block-section-alt">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-8 col-xs-offset-2 text-center">
-                        <h1 style="margin: 50px;">What we do</h1>
-                        <p  style="color: #027cae;">We're a group of college students who love working on projects with each other. With different majors, interests, and specialities, we might be diverse, but we're focused on one thing and one thing only: making cool things that people can use. Have a look around and see what we've done!</p>
-                    </div>
-                </div>
-            </div>
+			<div class="block-section-padding container">
+				<div class="row">
+					<div class="col-xs-8 col-xs-offset-2 text-center blue">
+						<h1 class="padding-bottom">What we do</h1>
+						<p>We're a group of college students who love working on projects with each other. With different majors, interests, and specialities, we might be diverse, but we're focused on one thing and one thing only: making cool things that people can use. Have a look around and see what we've done!</p>
+					</div>
+				</div>
+			</div>
         </section>
 
-        <section id="who-we-are" class="block-section">
-            <h1 style="padding-bottom: 50px;">About Us</h1>
-             <div class="container">
-                <div class="row">
-                    <div class="col-xs-2 col-xs-offset-2 text-center">
-                        <a href="users/ad.html"><img class="img-resize img-responsive img-circle center-block" src="img/harambe-placeholder.jpg"></a>
-                        <a href="users/ad.html"><h3 class="no-vert-margins">Ad</h3></a>
-                    </div>
-                    <div class="col-xs-2 col-xs-offset-4 text-center">
-                            <a href="users/noah.html"><img class="img-resize img-responsive img-circle center-block" src="img/harambe-placeholder.jpg"></a>
-                            <a href="users/noah.html"><h3 class="no-vert-margins">Noah</h3></a>
-                    </div>
-                </div>
-                <div class="row">
-                        <div class="col-xs-4 text-center">
-                                <a href="users/leo.html"><img class="img-resize img-responsive img-circle center-block" src="img/harambe-placeholder.jpg"></a>
-                                <a href="users/leo.html"><h3 class="no-vert-margins">Leo</h3></a>
-                        </div>
-                        <div class="col-xs-4 text-center">
-                            <a href="users/kalli.html"><img class="img-resize img-responsive img-circle center-block" src="img/harambe-placeholder.jpg"></a>
-                            <a href="users/kalli.html"><h3 class="no-vert-margins">Kalli</h3></a>
-                        </div>
-                        <div class="col-xs-4 text-center">
-                                <a href="users/chris.html"><img class="img-40x center-block" src="img/mackerel.png"></a>
-                                <a href="users/chris.html"><h3 class="no-vert-margins">Chris</h3></a>
-                        </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-2 col-xs-offset-2 text-center">
-                        <a href="users/ryan.html"><img class="img-resize img-responsive img-circle center-block" src="img/harambe-placeholder.jpg"></a>
-                        <a href="users/ryan.html"><h3 class="no-vert-margins">Ryan</h3></a>
-                    </div>
-                    <div class="col-xs-2 col-xs-offset-4 text-center">
-                            <a href="users/patrick.html"><img class="img-resize img-responsive img-circle center-block" src="img/harambe-placeholder.jpg"></a>
-                            <a href="users/patrick.html"><h3 class="no-vert-margins">Patrick</h3></a>
-                    </div>
-                </div>
-            </div>
+        <!--Who We Are Section -->
+        <section id="who-we-are" class="block-section block-section-padding">
+            <h1 class="white">About Us</h1>
+                <ul class="padding-top">
+                    <li class="text-center no-website">
+                        <!-- <a target="_blank" href="#"> --> <img class="img-10x" src="img/mackerel.png"> <!-- </a> --> 
+                        <!-- <a target="_blank" href="#"> --> <h3 class="white padding-bottom">Ad</h3> <!-- </a> --> 
+                    </li>
+                    <li class="text-center no-website">
+                            <!-- <a target="_blank" href="#"> --> <img class="img-10x" src="img/mackerel.png"> <!-- </a> --> 
+                            <!-- <a target="_blank" href="#"> --> <h3 class="white padding-bottom">Noah</h3> <!-- </a> --> 
+                    </li>
+                    <li class="text-center">
+                            <a target="_blank" href="http://leonardliu.com"><img class="img-10x" src="img/mackerel.png"></a>
+                            <a target="_blank" href="http://leonardliu.com"><h3 class="white padding-bottom">Leo</h3></a>
+                    </li>
+                    <li class="text-center no-website">
+                        <!-- <a target="_blank" href="#"> --> <img class="img-10x" src="img/mackerel.png"> <!-- </a> --> 
+                        <!-- <a target="_blank" href="#"> --> <h3 class="white padding-bottom">Kalli</h3> <!-- </a> --> 
+                    </li>
+                    <li class="text-center">
+                            <a target="_blank" href="https://csculley.site"><img class="img-10x" src="img/mackerel.png"></a>
+                            <a target="_blank" href="https://csculley.site"><h3 class="white padding-bottom">Chris</h3></a>
+                    </li>
+                    <li class="text-center no-website">
+                        <!-- <a target="_blank" href="#"> --> <img class="img-10x" src="img/mackerel.png"> <!-- </a> --> 
+                        <!-- <a target="_blank" href="#"> --> <h3 class="white padding-bottom">Ryan</h3> <!-- </a> --> 
+                    </li>
+                    <li class="text-center">
+                            <a target="_blank" href="users/patrick.html"><img class="img-10x" src="img/mackerel.png"> <!-- </a> --> 
+                            <a target="_blank" href="users/patrick.html"><h3 class="white padding-bottom">Patrick</h3> <!-- </a> --> 
+                    </li>
+                </ul>
         </section>
         
+        <!-- Projects Section -->
         <section id="projects" class="block-section-alt">
-            <h1 style="padding-bottom: 50px;">Projects</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-4 text-center">
-                        <a href="#"><img class="img-resize img-responsive img-rounded center-block" src="img/harambe-placeholder.jpg"></a>
-                        <a href="#"><h3>Project 1</h3></a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                        <a href="#"><img class="img-resize img-responsive img-rounded center-block" src="img/harambe-placeholder.jpg"></a>
-                        <a href="#"><h3>Project 2</h3></a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                        <a href="#"><img class="img-resize img-responsive img-rounded center-block" src="img/harambe-placeholder.jpg"></a>
-                        <a href="#"><h3>Project 3</h3></a>
-                    </div>
-                </div>
-            </div>
+			<div class="block-section-padding">
+				<h1 class="blue">Projects</h1>
+				<ul class="row">
+					<li class="text-center padding-right">
+						<a target="_blank" href="https://devpost.com/software/ad-block-ar">
+							<img class="img-10x" src="img/Negitoromaki1.png">
+							<text class="experimental">Experimental</text>
+							<h3 class="padding-bottom padding-top">Ad BlockAR</h3>
+						</a>
+					</li>
+					<li class="text-center">
+						<a target="_blank" href="https://devpost.com/software/fosscarina-gclae9">
+							<img class="img-10x" src="img/Negitoromaki1.png">
+							<text class="experimental">In development</text>
+							<h3 class="padding-bottom padding-top">FOSScarina</h3>
+						</a>
+					</li>
+				</ul>
+			</div>
         </section>
         
-        <section id="contact" class="block-section">
-            <h1 style="padding-bottom: 50px;">Contact Us</h1>
-            <div class="container">
-                <form class="text-left">
-                    <div class="form-group">
+        <!-- Contact Form -->
+        <section id="contact" class="contact outer block-section">
+            <div class="container middle">
+                <form method="post" action="email.php" class="inner white text-left">
+                    <h1 class="white text-center padding-bottom">Contact Us</h1>
+                    <div class="padding-top form-group">
                         <label for="inputFirstName">First name</label>
-                        <input type="text" class="form-control" id="inputFirstName" placeholder="Purdue">
+                        <input type="text" class="form-control" name="inputFirstName" placeholder="Purdue">
                     </div>
-                    <div class="form-group">
+                    <div class="white form-group">
                         <label for="inputLastName" class="text-left">Last name</label>
-                        <input type="text" class="form-control" id="inputLastName" placeholder="Pete">
+                        <input type="text" class="form-control" name="inputLastName" placeholder="Pete">
                     </div>
-                    <div class="form-group">
+                    <div class="white form-group">
+                        <label for="email" class="text-left">Email</label>
+                        <input type="text" class="form-control" name="inputEmail" placeholder="pete@purdue.edu">
+                    </div>
+                    <div class="white form-group">
                         <label for="inputContact" class="text-left">What would you like to say?</label>
-                        <textarea class="form-control" rows="10" id="inputContact" placeholder="Please write your message, questions, comments, or concerns in this box!"></textarea>
+                        <textarea class="form-control" rows="10" name="inputContact" placeholder="Please write your message, questions, comments, or concerns in this box!"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </section>
-        
-        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/npm.js"></script>
-        <script src="js/scrolling-nav.js"></script>
-        <script src="js/jquery.easing.min.js"></script>
 
-        <script>
-            window.onload = function() {
-                Particles.init({
-                    selector: '.particles'
-                });
-            };
-        </script>
-    
-        <canvas class="particles"></canvas>
-        <script src="js/particles.min.js"></script>
+		<div class="particles-wrapper">
+            <canvas class="particles"></canvas>
+        </div>
+
+        <!-- Scripts -->
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.1.0/particles.min.js"></script>
+        <script src="js/scrolling-nav.js"></script>
+		<script src="js/particles.js"></script>
     </body>
 </html>

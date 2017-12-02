@@ -1,0 +1,73 @@
+/* Body Elements */
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    background-color: #027cae;
+    border: none;
+    z-index: 999;
+    top: -100%;
+    -webkit-transition: top 1s ease;
+    -moz-transition: top 1s ease;
+    -o-transition: top 1s ease;
+    transition: top 1s ease;
+}
+
+.navbar.scrolled { /* Navbar slides in When scrolled */
+    top: 0;
+}
+
+.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:focus { /* Collapsed Navbar Colors */
+    border-color: #fff;
+    opacity: 0.8;
+    background-color: #027cae;
+}
+
+.navbar-inverse .navbar-toggle:hover { /* Collapsed Navbar Button */
+    background-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle:hover .icon-bar { /* Collapsed Navbar Button Lines */
+    background-color: #027cae;
+}
+
+.navbar-inverse .navbar-collapse { /* Collapsed Navbar Colors */
+    border-color: #fff;
+    border-width: 2px;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a { /* Navbar Link Fading */
+    color: #fff;
+    opacity: 0.8;
+    -webkit-transition: opacity .15s ease-in-out;
+    -moz-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+}
+
+.navbar-inverse:hover .navbar-brand:hover, .navbar-inverse .navbar-nav>li>a:hover{
+    opacity: 1;
+}
+
+/* Utilities */
+
+.nav-bump {
+	padding-top: 75px;
+}
+
+.padding-top {
+    padding-top: 10px;
+}
+
+.padding-bottom {
+    padding-bottom: 35px;
+}
+
+.img-resize {
+	max-width:100%;
+	height:auto;
+}
