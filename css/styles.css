@@ -21,16 +21,36 @@ h1, h2, h3, h4, h5, h6, p, a, a:link, a:visited {
 }
 
 h1 {
+	color: #1a4892;
     font-size: 3em;
 }
 
 h2 {
-    color: #005c82;
+	color: #1a4892;
     font-size: 2em;
 }
 
+h3 {
+	color: #1a4892;
+	padding-bottom: 5px;
+	font-size: 1.7em;
+}
+
 p {
-    font-size: 1.3em;
+	color: #151515;
+    font-size: 1.2em;
+}
+
+a {
+	color: #57adf9;
+}
+
+a:focus, a:hover {
+	color: #255d8e;
+	-webkit-transition: color .15s ease-in-out;
+    -moz-transition: color .15s ease-in-out;
+    -o-transition: color .15s ease-in-out;
+    transition: color .15s ease-in-out;
 }
 
 a.white h3, a:hover h3, a:focus h3  { /* a.white and a have inverse states */
