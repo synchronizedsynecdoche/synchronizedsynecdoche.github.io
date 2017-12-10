@@ -342,7 +342,7 @@ li {
 
 .outer {
     position: relative;
-    height: 95%;
+    min-height: 95%;
     width: 100%;
 }
 
