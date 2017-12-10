@@ -160,6 +160,22 @@ body, html{
     padding-right: 30px;
 }
 
+.noise {
+    position: relative;
+}
+
+.noise:before {
+    background: url(../img/noise.png);
+    content: '';
+	position: absolute;
+	float: right;
+    left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+}
+
 /* Intro Elements */
 
 .center-sushi {
@@ -286,18 +302,14 @@ li {
 }
 
 .outer {
-    display: table;
-    height: 100%;
+    position: relative;
+    height: 95%;
     width: 100%;
 }
 
-.middle {
-    display: table-cell;
-    vertical-align: middle;
-}
-
 .inner {
-    margin: 100px;
+    display: table;
+	padding: 100px;
 }
 
 .white {
