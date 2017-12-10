@@ -242,6 +242,7 @@ body, html{
 /* Contact Form Elements */
 
 .contact {
+	padding: 100px;
     color: #1a4892;
 }
 
@@ -281,7 +282,25 @@ li {
     margin-right: 10px;
 }
 
+/* Colors */
+
+.white {
+    color: #fff;
+}
+
+.black {
+	color: #333;
+}
+
+.blue {
+	color: #1a4892;
+}
+
 /* Utilties */
+
+.no-website {
+	opacity: .45;
+}
 
 .img-50x {
     min-height: 50%;
@@ -309,19 +328,12 @@ li {
 
 .inner {
     display: table;
-	padding: 100px;
 }
 
-.white {
-    color: #fff;
-}
+/* Spacing */
 
-.black {
-	color: #333;
-}
-
-.blue {
-	color: #1a4892;
+.margin {
+	margin: 50px;
 }
 
 .padding-top {
@@ -340,6 +352,10 @@ li {
 	padding-top: 75px;
 }
 
-.no-website {
-	opacity: .45;
+/* User Pages */
+
+.yotsuba {
+	padding: 20px;
+	max-width: 75vw;
+	height:auto;
 }
