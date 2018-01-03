@@ -284,6 +284,12 @@ body, html{
     color: #333;
 }
 
+/* Project Elements */
+
+.projects {
+    margin: 0px 70px 0px 70px;
+}
+
 /* List Elements */
 
 ul, li {
@@ -323,7 +329,7 @@ li {
 
 .placard {
     display: inline;
-    padding: 20px;
+    padding: 40px 20px 40px 20px;
     box-shadow: 0px 0px 50px -10px #323232;
     border-radius: 25px;
     background: #ffffffd0;
