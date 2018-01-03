@@ -108,6 +108,8 @@ body, html{
     z-index: -9999;
 }
 
+/* Nav */
+
 .navbar {
     position: fixed;
     background-color: #1a4892;
@@ -163,13 +165,14 @@ body, html{
     background: #1a4892;
     background: linear-gradient(135deg, #0a99c9, #451fb7);
     /* background-attachment: fixed; */
-	overflow: hidden;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px -10px #323232;
 }
 
 .block-section-alt {
 	text-align: center;
     background: transparent;
-    background: radial-gradient(circle at center, rgba(255,255,255,0.5) 0%, rgb(0,0,0) 500%);
+    background: radial-gradient(circle at center, rgba(255,255,255,0.3) 0%, rgb(0,0,0) 500%);
 }
 
 .block-section-padding {
@@ -318,6 +321,14 @@ li {
 
 /* Utilties */
 
+.placard {
+    display: inline;
+    padding: 20px;
+    box-shadow: 0px 0px 50px -10px #323232;
+    border-radius: 25px;
+    background: #ffffffd0;
+}
+
 .no-website {
 	opacity: .45;
 }
@@ -365,7 +376,7 @@ li {
 }
 
 .padding-right {
-	padding-right: 50px;
+	padding-right: 70px;
 }
 
 .nav-bump {
