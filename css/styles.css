@@ -53,16 +53,24 @@ a:focus, a:hover {
     transition: color .15s ease-in-out;
 }
 
-a.white h3, a:hover h3, a:focus h3  { /* a.white and a have inverse states */
-    opacity: 0.8;
+a h3 {	/* Link titles */
     -webkit-transition: opacity .15s ease-in-out;
     -moz-transition: opacity .15s ease-in-out;
     -o-transition: opacity .15s ease-in-out;
     transition: opacity .15s ease-in-out;
 }
 
-a.white:hover h3, a.white:focus h3, a.white h3 {
+a h3.white { /* White link titles */
+	opacity: 0.7;
+}
+
+a h3.blue { /* Blue is less washed out */
+	opacity: 0.85;
+}
+
+a:hover h3, a:focus h3 { /* Link title opacity and glow */
     opacity: 1;
+	text-shadow: 0px 0px 20px rgba(255,255,255,0.3);
 }
 
 .experimental {
@@ -290,6 +298,15 @@ body, html{
     margin: 0px 70px 0px 70px;
 }
 
+/* Mailing List */
+
+.g-form {
+    width: 50vw;
+	height: 50vh;
+	margin: 0;
+	frameborder: 0;
+}
+
 /* List Elements */
 
 ul, li {
@@ -337,6 +354,7 @@ li {
 
 .no-website {
 	opacity: .45;
+	cursor: not-allowed;
 }
 
 .img-50x {
