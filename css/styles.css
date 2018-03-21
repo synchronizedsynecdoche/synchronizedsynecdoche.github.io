@@ -226,6 +226,25 @@ body, html{
     background: #ffffffd0;
 }
 
+.sushi-background {
+    position: relative;
+}
+
+.sushi-background:before {
+    background: url("../img/background.png") center;
+    content: '';
+    position: absolute;
+    float: right;
+    background-size: 20em;
+    background-repeat: repeat;
+    filter: opacity(5%) contrast(200%) grayscale(100%);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
 .noise {
     position: relative;
 }
@@ -242,13 +261,18 @@ body, html{
 	pointer-events: none;
 }
 
+.content { /* Used to elevate content over image overlay background */
+    width: 100%;
+    position: relative;
+}
+
 /* Intro Elements */
 
-.intro {
+#intro {
     height: 100vh;
 }
 
-.center-sushi {
+#center-sushi {
     position: absolute;
     top: 47%;
     left: 50%;
@@ -261,32 +285,20 @@ body, html{
     height: auto;
 }
 
-.center-sushi h1 {
+#center-sushi h1 {
     font-size: 11vw;
     padding-bottom: 0.2em;
 }
 
-.center-sushi h2 {
+#center-sushi h2 {
     font-size: 3.5vw;
 }
 
-.center-sushi img {
+#center-sushi img {
     height: 30vh;
 }
 
-.sushi-background {
-    z-index: -1;
-    opacity: 0.3;
-    background: url("../img/set.png") center;
-    background-size: 20em;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-}
-
-.arrow-down {
+#arrow-down {
     position: absolute;
     bottom: 4%;
     left: 50%;
@@ -294,7 +306,7 @@ body, html{
     width: auto;
 }
 
-.arrow-down a h3 {
+#arrow-down a h3 {
     opacity: 0.8;
     -webkit-transition: opacity .15s ease-in-out;
     -moz-transition: opacity .15s ease-in-out;
@@ -302,11 +314,11 @@ body, html{
     transition: opacity .15s ease-in-out;
 }
 
-.arrow-down a:hover h3 {
+#arrow-down a:hover h3 {
     opacity: 1;
 }
 
-.arrow { /* Rotate arrow down */
+#arrow { /* Rotate arrow down */
     font-size: 2.5em;
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -328,18 +340,10 @@ body, html{
     margin: 0.5em;
 }
 
-.no-website {
-	opacity: .45;
+
+.no-website h3 {
+    opacity: .7;
 	cursor: not-allowed;
-}
-
-/* Mailing List */
-
-.g-form {
-    width: 50vw;
-	height: 50vh;
-	margin: 0;
-	frameborder: 0;
 }
 
 /* Colors */

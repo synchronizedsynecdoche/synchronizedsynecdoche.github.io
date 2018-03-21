@@ -46,18 +46,17 @@
         </nav>
 
         <!-- Intro text -->
-        <section id="intro" class="intro block-section noise">
-            <div class="sushi-background"></div>
+        <section id="intro" class="block-section sushi-background">
 			<div class="block-section-padding">
-				<div class="center-sushi">
-                    <img src="img/set.png">
-					<h1 class="white">negitoromaki</h1>
+				<div id="center-sushi">
+                    <img src="img/set.png"/>
+                    <h1 class="white">negitoromaki</h1>
                     <h2 class="padding-bottom white">Hi. We're the sushi chefs.</h2>
 				</div>
-				<div class="arrow-down container">
+				<div id="arrow-down" class="container">
 					<h5 class="white text-center">Enter the Kitchen</h5>
 					<a class="white page-scroll" href="#about">
-						<h3 class="arrow white">➜</h3>
+						<h3 id="arrow" class="white">➜</h3>
 					</a>
 				</div>
 			</div>
@@ -65,7 +64,7 @@
 
         <!-- About Section -->
         <section id="about" class="block-section-alt">
-			<div class="block-section-padding container">
+			<div class="block-section-padding content container">
 				<div class="row">
 					<div class="col-xs-10 col-xs-offset-1 text-center placard blue">
                         <h1 class="padding-bottom">What We Do</h1>
@@ -76,8 +75,9 @@
         </section>
 
         <!--Who We Are Section -->
-        <section id="who-we-are" class="block-section block-section-padding noise">
-            <h1 class="white">About Us</h1>
+        <section id="who-we-are" class="block-section sushi-background">
+            <div class="block-section-padding content">
+                <h1 class="white">About Us</h1>
                 <ul class="padding-top">
                     <li class="sushi text-center">
                         <a target="_blank" href="users/ad/index.html"><img src="img/tuna.png"></a>
@@ -96,7 +96,7 @@
                         <a target="_blank" href="https://zkalli.art"><h3 class="white padding-bottom">Kalli</h3></a>
                     </li>
                     <li class="sushi text-center">
-                            <a target="_blank" href="https://csculley.site"><img src="img/squid.png"></a>
+                            <a target="_blank" href="https://csculley.site"><img src="img/mackerel.png"></a>
                             <a target="_blank" href="https://csculley.site"><h3 class="white padding-bottom">Chris</h3></a>
                     </li>
                     <li class="sushi text-center">
@@ -104,15 +104,16 @@
                         <a target="_blank" href="https://eatwithmee.squarespace.com"><h3 class="white padding-bottom">Ryan</h3></a>
                     </li>
                     <li class="sushi text-center">
-                            <a target="_blank" href="users/patrick/index.html"><img src="img/tuna.png"></a> 
+                            <a target="_blank" href="users/patrick/index.html"><img src="img/squid.png"></a> 
                             <a target="_blank" href="users/patrick/index.html"><h3 class="white padding-bottom">Patrick</h3></a>
                     </li>
                 </ul>
+            </div>
         </section>
         
         <!-- Mailing List Section -->
         <section id="mailing-list" class="block-section-alt">
-            <div class="block-section-padding">
+            <div class="block-section-padding content">
                 <div class="row">
                     <div class="col-xs-8 col-xs-offset-2 text-center placard blue">
                         <h1 class="blue">Mailing List</h1>
@@ -129,8 +130,8 @@
         </section>
         
         <!-- Contact Form -->
-        <section id="contact" class="outer block-section noise">
-            <div class="container inner">
+        <section id="contact" class="outer block-section sushi-background">
+            <div class="container content inner">
                 <form method="post" action="email.php" class="contact white text-left">
                     <h1 class="white text-center padding-bottom">Contact Us</h1>
                     <div class="padding-top form-group">
